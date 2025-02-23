@@ -1,0 +1,415 @@
+/* Estilos Gerais */
+body {
+    display: block;
+}
+
+header {
+    width: 100%;
+    max-height: 4rem;
+    margin: 0;
+    padding: 0 1rem;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    overflow: hidden;
+}
+
+header .logo {
+    width: 3rem;
+    pointer-events: none;
+}
+
+/* Estilos do Menu */
+nav .links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+
+}
+
+nav .link {
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+nav .link:hover {
+    color: #00bad3;
+}
+
+/* Estilos do Menu Hambúrguer */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 0.4rem;
+}
+
+.menu-toggle .bar {
+    width: 2rem;
+    height: 0.2rem;
+    background-color: white;
+    border-radius: 5px;
+}
+
+
+
+
+main {
+    background: #000;
+
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    overflow: hidden;
+
+}
+
+.links li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10rem;
+    margin-left: 2rem;
+    padding: 0px 5px 0px 5px;
+    transition: .1s;
+    cursor: pointer;
+
+}
+
+.links li:hover {
+    background-color: #ffffff;
+    color: black;
+    cursor: pointer;
+    height: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 5px 0px 5px;
+    transition: .4s;
+
+}
+
+/* banner */
+
+.container {
+    width: 100%;
+    height: 95vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+
+
+}
+
+.photo {
+    background-color: aquamarine;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(/assets/bannermaquiagem.svg);
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    box-shadow: inset 0rem -4rem 3rem black;
+
+}
+
+.topicos {
+    text-align: center;
+    color: #ffffff;
+
+}
+
+h1,
+h2 {
+    font-family: "poppins", "arial";
+    font-weight: 500;
+    line-height: 0;
+    font-style: normal;
+    color: #fff;
+    text-shadow: #000000 1px 1px 4px;
+
+
+}
+
+h2 {
+    font-weight: 200;
+    color: #ffffff;
+
+}
+
+.but {
+    font-family: "poppins";
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    padding: 5px 25px;
+
+
+
+}
+
+.box-container {
+    width: 100%;
+    height: 50vh auto;
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 1rem 0rem;
+    gap: 1rem;
+    background-color: #000;
+
+
+
+}
+
+.box {
+    width: 14rem;
+    height: 35vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 1rem;
+    transition: .4s;
+    text-align: center;
+    overflow: hidden;
+
+}
+
+.box img {
+    width: 100%;
+
+
+}
+
+.box:hover {
+    transform: scale(1.1);
+    transition: .4s;
+}
+
+
+.bannerin {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background: url("/assets/bannerin.svg") no-repeat center center;
+    background-size: cover;
+    box-shadow: inset 0rem 3rem 4rem black;
+}
+
+.textoin {
+    color: #fff;
+    width: 20rem;
+    font-family: sans-serif;
+    position: relative;
+    left: 10rem;
+    top: 10rem;
+    font-size: 2rem;
+
+}
+
+.spantext {
+    font-size: 3rem;
+
+}
+
+.bannerebook {
+    width: 100%;
+    height: 100vh;
+    background-image: url(/assets/bannerebook.svg);
+    background-size: cover;
+    background-position: center;
+
+}
+
+
+
+/* Footer */
+footer {
+    border-top: 1px white solid;
+    background-color: #000000;
+    color: #fff;
+    padding: 2rem 1rem;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Logo e Descrição */
+.footer-logo img {
+    width: 10rem;
+    margin-bottom: 0.5rem;
+}
+
+.footer-logo p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+/* Links Rápidos */
+.footer-links h4,
+.footer-contact h4,
+.footer-newsletter h4,
+.social h4 {
+    margin-bottom: 0.8rem;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    color: #f4b400;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #f4b400;
+}
+
+/* Contato */
+.footer-contact p {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+
+/* Redes Sociais */
+.social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.social a {
+    display: inline-block;
+}
+
+.social img {
+    width: 2.5rem;
+    transition: transform 0.3s ease-in-out;
+}
+
+.social img:hover {
+    transform: scale(1.4);
+}
+
+/* Direitos Autorais */
+.footer-bottom {
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid #444;
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    nav {
+        position: absolute;
+        top: 4rem;
+        left: 0;
+        width: 100%;
+        background-color: black;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        display: none;
+    }
+
+    nav .links {
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem 0;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    nav.active {
+        display: flex;
+    }
+}
+
+/* respondividade */
+@media (max-width: 560px) {
+    .textoin {
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@media (max-width: 500px) {
+    .box {
+        margin: 0px 3px;
+        width: 10.2rem;
+        height: 30vh;
+
+
+    }
+
+    .topicos {
+        position: relative;
+        font-size: 1.3rem;
+        top: 1rem;
+    }
+
+}
+
+@media (max-width: 360px) {
+    .box {
+        margin: 0px 3px;
+        width: 90%;
+        height: 20vh;
+
+
+    }
+
+    .topicos {
+        position: relative;
+        font-size: 1.3rem;
+        top: 1rem;
+    }
+
+}
