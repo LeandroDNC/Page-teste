@@ -15,6 +15,9 @@ header {
     background-color: black;
     color: white;
     overflow: hidden;
+    position: fixed;
+    z-index: 1;
+    
 }
 
 header .logo {
@@ -120,7 +123,7 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-image: url(/assets/bannermaquiagem.svg);
+    background-image: url(./bannermaquiagem.svg);
     background-size: cover;
     background-position: center;
     margin: 0;
@@ -136,6 +139,7 @@ main {
 
 h1,
 h2 {
+   
     font-family: "poppins", "arial";
     font-weight: 500;
     line-height: 0;
@@ -173,8 +177,7 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    padding: 1rem 0rem;
-    gap: 1rem;
+    gap: 10px   5px;
     background-color: #000;
 
 
@@ -182,14 +185,13 @@ h2 {
 }
 
 .box {
-    width: 14rem;
+    width: 24%;
     height: 35vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     background-color: #fff;
-    border-radius: 1rem;
     transition: .4s;
     text-align: center;
     overflow: hidden;
@@ -198,8 +200,6 @@ h2 {
 
 .box img {
     width: 100%;
-
-
 }
 
 .box:hover {
@@ -212,7 +212,7 @@ h2 {
     width: 100%;
     height: 100vh;
     overflow: hidden;
-    background: url("/assets/bannerin.svg") no-repeat center center;
+    background-image: url(./bannerin.svg);
     background-size: cover;
     box-shadow: inset 0rem 3rem 4rem black;
 }
@@ -236,7 +236,7 @@ h2 {
 .bannerebook {
     width: 100%;
     height: 100vh;
-    background-image: url(/assets/bannerebook.svg);
+    background-image: url(bannerebook.svg);
     background-size: cover;
     background-position: center;
 
@@ -385,6 +385,8 @@ footer {
         margin: 0px 3px;
         width: 10.2rem;
         height: 30vh;
+        position: relative;
+        top: 3rem;
 
 
     }
